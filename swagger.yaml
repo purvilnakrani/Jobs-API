@@ -1,10 +1,10 @@
 openapi: 3.0.0
 info:
-  title: Jobs API
+  title: JOBS-API   by Purvil
   contact: {}
   version: '1.0'
 servers:
-  - url: https://jobs-api-06.herokuapp.com/api/v1
+  - url: localhost:5000/api/v1
     variables: {}
 paths:
   /auth/register:
@@ -21,8 +21,8 @@ paths:
             schema:
               $ref: '#/components/schemas/RegisterUserRequest'
             example:
-              name: bob
-              email: bob@gmail.com
+              name: purvil
+              email: purvil@gmail.com
               password: secret
         required: true
       responses:
@@ -45,7 +45,7 @@ paths:
             schema:
               $ref: '#/components/schemas/LoginUserRequest'
             example:
-              email: susan@gmail.com
+              email: bhargav@gmail.com
               password: secret
         required: true
       responses:
@@ -156,8 +156,8 @@ components:
         password:
           type: string
       example:
-        name: bob
-        email: bob@gmail.com
+        name: purvil
+        email: purvil@gmail.com
         password: secret
     LoginUserRequest:
       title: LoginUserRequest
@@ -171,7 +171,7 @@ components:
         password:
           type: string
       example:
-        email: susan@gmail.com
+        email: bhargav@gmail.com
         password: secret
     CreateJobRequest:
       title: CreateJobRequest
